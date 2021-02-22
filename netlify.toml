@@ -1,3 +1,4 @@
 [build]
-  publish = "static/"
+  base = "epaper-ui/"
+  publish = "dist/"
   command = "npm run build"
