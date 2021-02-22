@@ -1,0 +1,42 @@
+/* ./tailwind.css */
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "PFAdamantPro";
+  src: url("assets/PFAdamantPro.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Sabon";
+  src: url("assets/Sabon_Roman.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("assets/SourceCodePro-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("assets/JetBrainsMono-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Palatino";
+  src: url("assets/Palatino.ttf") format("ttf");
+}
+
+html,body,p,input,textarea,h1,h2, div {
+  font-family: 'PFAdamantPro';
+}
+
+body {
+  width:800px;
+  max-width: 800px;
+
+  height: 480px;
+  max-height: 480px;
+}
+
+@tailwind utilities;

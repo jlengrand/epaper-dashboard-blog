@@ -1,0 +1,27 @@
+{
+  "name": "epaper-dashboard",
+  "version": "1.0.0",
+  "description": "Runner for my epaper dashboard",
+  "main": "index.js",
+  "scripts": {
+    "node-engine": "node -v",
+    "build": "cd epaper-ui; npm run css; npm run build; npm run dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlengrand/epaper-dashboard.git"
+  },
+  "author": "Julien Lengrand-Lambert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlengrand/epaper-dashboard/issues"
+  },
+  "homepage": "https://github.com/jlengrand/epaper-dashboard#readme",
+  "dependencies": {
+    "epaperjs": "^1.3.3"
+  }
+}

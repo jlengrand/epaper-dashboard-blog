@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="60"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="A simple paper dashboard">
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link href="assets/tailwind-final.css" rel="stylesheet">
+  <base href="/">
+
+  <title>paper-dashboard</title>
+</head>
+
+<body>
+  <paper-dashboard></paper-dashboard>
+
+  <script type="module" src="./out-tsc/src/PaperDashboard.js"></script>
+  <script>
+    const ws = new WebSocket('ws://localhost:8080');
+    ws.addEventListener('open', () => {
+      setTimeout(() => ws.send('render'), 10000);
+      setInterval( () => {ws.send('render')}, 300000);
+    });
+  </script>
+</body>
+
+</html>

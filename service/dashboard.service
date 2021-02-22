@@ -1,0 +1,15 @@
+[Unit]
+Description=Epaper dashboard
+[Service]
+User=pi
+WorkingDirectory=/home/pi/epaper-dashboard
+ExecStart=/home/pi/epaper-dashboard/dashboard.sh start
+ExecStop=/home/pi/epaper-dashboard/dashboard.sh stop
+ExecReload=/home/pi/epaper-dashboard/dashboard.sh restart
+
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
